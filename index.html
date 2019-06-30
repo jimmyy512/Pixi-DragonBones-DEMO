@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>DragonBones Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #RotateTip {
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 9999;
+            display: block;
+            background-size: cover;
+            background-image: url('resources/back-rotate.jpg');
+        }
+    </style>
+
+    <script src="./lib/pixi/pixi_5.0.js"></script>
+    <script src="./lib/dragonBones/dragonBones.js"></script>
+    <script src="./src/character.js"></script>
+    <script src="./src/button.js"></script>
+    <script src="./src/Map.js"></script>
+    <script src="./src/main.js"></script>
+</head>
+
+<body>
+    <!-- <canvas id="main"></canvas> -->
+    <div id="RotateTip"></div>
+</body>
+
+</html>
